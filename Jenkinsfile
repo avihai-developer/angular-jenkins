@@ -1,9 +1,14 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'node:12.14-alpine'
+    }
+
+  }
   stages {
-    stage('s') {
+    stage('') {
       steps {
-        sh 'sudo docker -v'
+        sh 'ls -la'
       }
     }
 
