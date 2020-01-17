@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('s') {
       steps {
-        sh 'docker -v'
+        sh 'ls -la'
       }
     }
 
