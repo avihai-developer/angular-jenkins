@@ -1,19 +1,7 @@
 pipeline {
   agent none
   stages {
-    stage('Build') {
-      steps {
-        sh 'docker -v'
-      }
-    }
-
-    stage('Test') {
-      steps {
-        sh 'docker -v'
-      }
-    }
-
-    stage('Deploy') {
+    stage('s') {
       steps {
         sh 'docker -v'
       }
