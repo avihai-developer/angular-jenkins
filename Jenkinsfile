@@ -1,14 +1,9 @@
 pipeline {
-  agent {
-    docker {
-      image 'node:12.14-alpine'
-    }
-
-  }
+  agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        sh 'ls -la'
+        sh 'docker ps'
       }
     }
 
