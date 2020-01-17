@@ -3,10 +3,21 @@ pipeline {
     dockerfile true
   }
   stages {
+    stage('Build') {
+      steps {
+        sh 'docker -v'
+      }
+    }
+
     stage('Test') {
       steps {
-        sh 'node --version'
-        sh 'svn --version'
+        sh 'docker -v'
+      }
+    }
+
+    stage('Deploy') {
+      steps {
+        sh 'docker -v'
       }
     }
 
